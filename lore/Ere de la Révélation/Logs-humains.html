@@ -2,70 +2,165 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Âge 1 - It's no Blame</title>
+  <title>It's no Blame</title>
   <style>
     body {
-      background-color: #0d0d0d;
-      color: #f0f0f0;
-      font-family: monospace;
-      padding: 2em;
-      line-height: 1.5;
-    }
-    h1,h2,h3,h4,h5,h6 {
-      font-size: 1.8em;
-      font-weight: bold;
-      margin-top: 0.5em;
-      border-bottom: 1px solid #444;
-      padding-bottom: 0.2em;
-    }
-    p {
-      margin-bottom: 1em;
-    }
+        background-color: #0d0d0d;
+        color: #f0f0f0;
+        font-family: monospace;
+        padding: 2em;
+        line-height: 1.6;
+        }
+
+        /* Titre 📑 / 📜 — le plus imposant */
+        .bandeau-titre {
+        font-size: 2.8em;
+        font-weight: bold;
+        margin-top: 2.5em;   /* grand espace au-dessus */
+        margin-bottom: 1em; /* grand espace en dessous */
+        border-bottom: 2px solid #1a1a1a;
+        padding-bottom: 0.4em;
+        color: #ffe08a; /* couleur dorée pâle */
+        }
+
+        /* Titre principal (niveau haut) */
+        .titre-principal {
+        font-size: 1.9em;
+        font-weight: bold;
+        margin-top: 1.2em; /* espace avant le titre principal */
+        margin-bottom: 1.2em; /* espace après */
+        padding-left: 0em;
+        color: rgb(64, 64, 216);
+        }
+
+        /* Titre secondaire (sous-ensemble du principal) */
+        .titre-secondaire {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        padding-left: 1.5em;
+        color: rgb(48, 201, 117);
+        }
+
+        /* Titre tertiaire (sous-ensemble du secondaire) */
+        .titre-tertiaire {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        padding-left: 3em;
+        color: rgb(243, 162, 232);
+        }
+
+        /* Paragraphe */
+        p {
+        margin-top: 0;
+        margin-bottom: 1em;
+        padding-left: 4em;
+        }
+
+        /* Bloc de texte type logs / code / schémas */
+        pre, code {
+        background-color: #0a0a0a;
+        padding: 1em;
+        display: block;
+        white-space: pre-wrap;
+        margin-left: 4em;
+        margin-top: 0;
+        margin-bottom: 1.5em;
+        border-left: 4px solid #1a1a1a;
+        font-size: 0.95em;
+        }
+        
+        /* Dialogue */
+        .dialogue {
+          margin-left: 4em;
+          margin-bottom: 4em;
+        }
+
+        .dialogue p {
+          margin-top: 0.3em;
+          margin-bottom: 2em; /* augmente ici l'espacement entre les interventions */
+          line-height: 1.5;
+          color: rgb(252, 252, 252);
+          font-family: monospace;  
+        }
+
+        .dialogue-speaker {
+          font-weight: bold;
+          color: rgb(251, 77, 80);
+        }
+
+
+        /* Tableau */
+        table {
+        border-collapse: collapse;
+        margin-left: 4em;
+        margin-bottom: 2em;
+        font-size: 0.95em;
+        }
+        table, th, td {
+        border: 1px solid #888;
+        padding: 0.5em 1em;
+        }
+        th {
+        background-color: #1a1a1a;
+        }
+        td {
+        background-color: #1a1a1a;
+        }
+
   </style>
 </head>
 <body>
-    <h1>Log Humain divers</h1>
+
+    <div class="titre-principal">Log Humain divers</div> 
+    <div class=" titre-secondaire">📜 Année 1801</div>
+    <div class="titre-tertiaire">Ussoî, Maître Théologiste : Étude personnelle n°4102</div>
+    <p>Je le savais.<br />
+    Après plus de vingt ans de recherches, tout se confirme : Dieu veut que toute l’humanité s’élève.<br />
+    Il punit chaque homme qui cherche à s’élever seul, par cupidité ou par fanatisme.<br />
+    Quand j’ai compris cela, je me suis naturellement demandé : par quel moyen y parviendrons-nous ?<br />
+    Quel instrument Dieu a-t-Il mis à notre disposition pour accomplir cette tâche ?<br />
+    Une structure planétaire d’élévation…<br />
+    J’ai longtemps douté de sa faisabilité, mais toutes mes recherches, tous mes calculs, absolument tout est parfait.<br />
+    Maintenant, il me faut, avant ma fin proche, convaincre mes pairs.</p>
+  
     
-    <h2>📜 Log – Année 1892</h2>
+    <div class=" titre-secondaire">📜 Log – Année 1892</div>
+    <div class="titre-tertiaire">Délibération de la Chambre Supérieure de la Foi Divine</div>
+    <div class="titre-tertiaire">Greffier en charge : Sora Desgort</div>
 
-    <p>Délibération de la Chambre Supérieure de la Foi Divine<br />
-    Greffier en charge : Sora Desgort</p>
+    <div class="dialogue">
+      <p><span class="dialogue-speaker">Père Austan</span> : Le Maître Ussoî nous avait prévenus, mes frères et sœurs.<br />
+      Notre foi… je le sens, elle stagne.<br />
+      Comment prétendre “élever” notre esprit si le premier interdit est de ne pas percer le ciel ?</p>
 
-    <p>Père Austan :<br />
-    Le Maître Ussoî nous avait prévenus, mes frères et sœurs.<br />
-    Notre foi… je le sens, elle stagne.<br />
-    Comment prétendre “élever” notre esprit si le premier interdit est de ne pas percer le ciel ?</p>
+      <p><span class="dialogue-speaker">Sœur Odylle</span> : Cette loi n’est pas discutable.<br />
+      Notre Seigneur nous l’a bien montré : par respect pour la vie qu’Il accorde, nous n’avons jamais stoppé ces tentatives de percer le ciel.<br />
+      Et pourtant, jamais aucun blasphémateur n’a réussi.</p>
 
-    <p>Sœur Odylle :<br />
-    Cette loi n’est pas discutable.<br />
-    Notre Seigneur nous l’a bien montré : par respect pour la vie qu’Il accorde, nous n’avons jamais stoppé ces tentatives de percer le ciel.<br />
-    Et pourtant, jamais aucun blasphémateur n’a réussi.</p>
+      <p><span class="dialogue-speaker">Mère Supérieure Marie</span> : Voyons, voyons… calmons-nous.<br />
+      Frère Ussoî, paix à son âme, a passé sa vie à étudier les Saintes Écritures.<br />
+      Et à l’orée de sa fin, il m’a confié son ultime conclusion…</p>
 
-    <p>Mère Supérieure Marie <br />:
-    Voyons, voyons… calmons-nous.<br />
-    Frère Ussoî, paix à son âme, a passé sa vie à étudier les Saintes Écritures.<br />
-    Et à l’orée de sa fin, il m’a confié son ultime conclusion…</p>
+      <p><span class="dialogue-speaker">Père Austan</span> : Mère…?</p>
 
-    <p>Père Austan :<br />
-    Mère…?</p>
+      <p><span class="dialogue-speaker">Mère Supérieure Marie</span> : Selon lui, nos interprétations de “l’élévation” sont erronées.<br />
+      Durant des siècles, nous nous sommes évertués à élever nos esprits.<br />
+      Mais si, en réalité, il fallait élever physiquement l’humanité pour rejoindre Dieu ?</p>
 
-    <p>Mère Supérieure Marie :
-    Selon lui, nos interprétations de “l’élévation” sont erronées.<br />
-    Durant des siècles, nous nous sommes évertués à élever nos esprits.<br />
-    Mais si, en réalité, il fallait élever physiquement l’humanité pour rejoindre Dieu ?</p>
+      <p><span class="dialogue-speaker">Sœur Odylle</span> : É…élever… physiquement ?<br />
+      J’ai peur de ne pas comprendre, Mère Supérieure.</p>
 
-    <p>Sœur Odylle :<br />
-    É…élever… physiquement ?<br />
-    J’ai peur de ne pas comprendre, Mère Supérieure.</p>
-
-    <p>Maître des Archives Mohamed :<br />
-    Je pense qu’une image vaut mille mots.<br />
-    Mère Supérieure, permettez que je leur montre…?<br />
-    (Elle acquiesce d’un signe de tête.)<br />
-    Bien.<br />
-    (Il s’approche et déroule un large rouleau sur la table.)<br />
-    Ussoî a passé la fin de sa vie à théoriser un moyen de “s’élever” vers Dieu sans transgresser l’Interdit.<br />
-    Voyez-vous… au moyen de ce qu’il nommait : la Structure d’Élévation Planétaire.</p>
-
-  </body>
-  </html>
+      <p><span class="dialogue-speaker">Maître des Archives Mohamed</span> : Je pense qu’une image vaut mille mots.<br />
+      Mère Supérieure, permettez que je leur montre…?<br />
+      <em>(Elle acquiesce d’un signe de tête.)</em><br />
+      Bien.<br />
+      <em>(Il s’approche et déroule un large rouleau sur la table.)</em><br />
+      Ussoî a passé la fin de sa vie à théoriser un moyen de “s’élever” vers Dieu sans transgresser l’Interdit.<br />
+      Voyez-vous… au moyen de ce qu’il nommait : la Structure d’Élévation Planétaire.</p>
+      </div>
+</body>
+</html>

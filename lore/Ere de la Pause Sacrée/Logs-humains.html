@@ -5,32 +5,98 @@
   <title>Âge 1 - It's no Blame</title>
   <style>
     body {
-      background-color: #0d0d0d;
-      color: #f0f0f0;
-      font-family: monospace;
-      padding: 2em;
-      line-height: 1.5;
-    }
-    h1,h2,h3,h4,h5,h6 {
-      font-size: 1.8em;
-      font-weight: bold;
-      margin-top: 5em;
-      margin-bottom: 1em;
-      border-bottom: 1px solid #444;
-      padding-bottom: 0.2em;
-    }
-    p {
-      margin-bottom: 1em;
-    }
+        background-color: #0d0d0d;
+        color: #f0f0f0;
+        font-family: monospace;
+        padding: 2em;
+        line-height: 1.6;
+        }
+
+        /* Titre 📑 / 📜 — le plus imposant */
+        .bandeau-titre {
+        font-size: 2.8em;
+        font-weight: bold;
+        margin-top: 2.5em;   /* grand espace au-dessus */
+        margin-bottom: 1em; /* grand espace en dessous */
+        border-bottom: 2px solid #1a1a1a;
+        padding-bottom: 0.4em;
+        color: #ffe08a; /* couleur dorée pâle */
+        }
+
+        /* Titre principal (niveau haut) */
+        .titre-principal {
+        font-size: 1.9em;
+        font-weight: bold;
+        margin-top: 1.2em; /* espace avant le titre principal */
+        margin-bottom: 1.2em; /* espace après */
+        padding-left: 0em;
+        color: rgb(64, 64, 216);
+        }
+
+        /* Titre secondaire (sous-ensemble du principal) */
+        .titre-secondaire {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        padding-left: 1.5em;
+        color: rgb(48, 201, 117);
+        }
+
+        /* Titre tertiaire (sous-ensemble du secondaire) */
+        .titre-tertiaire {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        padding-left: 3em;
+        color: rgb(200, 38, 178);
+        }
+
+        /* Paragraphe */
+        p {
+        margin-top: 0;
+        margin-bottom: 1em;
+        padding-left: 4em;
+        }
+
+        /* Bloc de texte type logs / code / schémas */
+        pre, code {
+        background-color: #1a1a1a;
+        padding: 1em;
+        display: block;
+        white-space: pre-wrap;
+        margin-left: 4em;
+        margin-top: 0;
+        margin-bottom: 1.5em;
+        border-left: 4px solid #1a1a1a;
+        font-size: 0.95em;
+        }
+
+        /* Tableau */
+        table {
+        border-collapse: collapse;
+        margin-left: 4em;
+        margin-bottom: 2em;
+        font-size: 0.95em;
+        }
+        table, th, td {
+        border: 1px solid #888;
+        padding: 0.5em 1em;
+        }
+        th {
+        background-color: #1a1a1a;
+        }
+        td {
+        background-color: #1a1a1a;
+        }
+
   </style>
 </head>
 <body>
-    <h1>Log Humain divers</h1>
-    
-    <h2>📜 Log – Année 1740</h2>
-
-    <p><strong>Ussoî – Théologiste de rang supérieur</strong>Étude personnelle n°29</p>
-
+    <div class="titre-principal">Log Humain divers</div> 
+    <div class=" titre-secondaire">📜 Log – Année 1740</div>
+    <div class="titre-tertiaire">Ussoî – Théologiste de rang supérieur : Étude personnelle n°29</div>
     <p>Voilà des centaines d’années que mes frères et sœurs prient Dieu, implorant qu’Il nous délivre de cette existence matérielle. Pourtant, jamais un signe.<br />
     Malgré nos observations minutieuses de Son domaine, Il persiste à se dérober.<br />
     Si seulement Son domaine n’était pas si inaccessible, peut-être pourrions-nous…?<br />
@@ -39,9 +105,7 @@
 
 
     <h3>📜 Log – Année 1768</h3>
-
-    <p><strong>Ussoî – Maître Théologiste</strong>Étude personnelle n°236</p>
-
+    <div class="titre-tertiaire">Ussoî – Maître Théologiste : Étude personnelle n°236</div>
     <p> nuit, les hérétiques ont commis l’irréparable.<br />
     Comme la loi divine le dicte, la sentence s’est abattue sur ces pauvres bougres.<br />
     Je les avais pourtant prévenus.<br />En secret, ils avaient construit un ballon ascensionnel pour s’élever jusqu’à Son domaine.<br />
@@ -50,10 +114,8 @@
     Mais qui écouterait encore un homme de foi qui leur demande de renoncer à la leur ?</p>
     
     
-    <h4>📜 Année 1774</h4>
-
-    <p><strong>Ussoî, Maître Théologiste</strong>Étude personnelle n°1765</p>
-
+    <div class=" titre-secondaire">📜 Année 1774</div>
+    <div class="titre-tertiaire">Ussoî, Maître Théologiste : Étude personnelle n°1765</div>
     <p>Après toutes mes recherches dans les saintes écritures, je pense enfin savoir comment rencontrer notre Seigneur et briser Son domaine.<br />
     Tout était là depuis le début.<br />
     Comment mes prédécesseurs ont-ils pu ne pas voir ceci ?<br />
@@ -67,10 +129,8 @@
     Comment avons-nous pu passer si longtemps sans comprendre que ces exhortations n’étaient pas seulement spirituelles, mais littérales ?</p>
 
 
-    <h5>📜 Année 1801</h5>
-
-    <p><strong>Ussoî, Maître Théologiste</strong>Étude personnelle n°2102</p>
-
+    <div class=" titre-secondaire">📜 Année 1801</div>
+    <div class="titre-tertiaire">Ussoî, Maître Théologiste : Étude personnelle n°4102</div>
     <p>Je le savais.<br />
     Après plus de vingt ans de recherches, tout se confirme : Dieu veut que toute l’humanité s’élève.<br />
     Il punit chaque homme qui cherche à s’élever seul, par cupidité ou par fanatisme.<br />

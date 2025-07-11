@@ -5,39 +5,113 @@
   <title>Âge 1 - It's no Blame</title>
   <style>
     body {
-      background-color: #0d0d0d;
-      color: #f0f0f0;
-      font-family: monospace;
-      padding: 2em;
-      line-height: 1.5;
-    }
-    h1 {
-      border-bottom: 1px solid #444;
-      padding-bottom: 0.5em;
-    }
-    p {
-      margin-bottom: 1em;
-    }
+        background-color: #0d0d0d;
+        color: #f0f0f0;
+        font-family: monospace;
+        padding: 2em;
+        line-height: 1.6;
+        }
+
+        /* Titre 📑 / 📜 — le plus imposant */
+        .bandeau-titre {
+        font-size: 2.8em;
+        font-weight: bold;
+        margin-top: 2.5em;   /* grand espace au-dessus */
+        margin-bottom: 1em; /* grand espace en dessous */
+        border-bottom: 2px solid #1a1a1a;
+        padding-bottom: 0.4em;
+        color: #ffe08a; /* couleur dorée pâle */
+        }
+
+        /* Titre principal (niveau haut) */
+        .titre-principal {
+        font-size: 1.9em;
+        font-weight: bold;
+        margin-top: 1.2em; /* espace avant le titre principal */
+        margin-bottom: 1.2em; /* espace après */
+        padding-left: 0em;
+        color: rgb(64, 64, 216);
+        }
+
+        /* Titre secondaire (sous-ensemble du principal) */
+        .titre-secondaire {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        padding-left: 1.5em;
+        color: rgb(48, 201, 117);
+        }
+
+        /* Titre tertiaire (sous-ensemble du secondaire) */
+        .titre-tertiaire {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        padding-left: 3em;
+        color: rgb(200, 38, 178);
+        }
+
+        /* Paragraphe */
+        p {
+        margin-top: 0;
+        margin-bottom: 1em;
+        padding-left: 4em;
+        }
+
+        /* Bloc de texte type logs / code / schémas */
+        pre, code {
+        background-color: #1a1a1a;
+        padding: 1em;
+        display: block;
+        white-space: pre-wrap;
+        margin-left: 4em;
+        margin-top: 0;
+        margin-bottom: 1.5em;
+        border-left: 4px solid #1a1a1a;
+        font-size: 0.95em;
+        }
+
+        /* Tableau */
+        table {
+        border-collapse: collapse;
+        margin-left: 4em;
+        margin-bottom: 2em;
+        font-size: 0.95em;
+        }
+        table, th, td {
+        border: 1px solid #888;
+        padding: 0.5em 1em;
+        }
+        th {
+        background-color: #1a1a1a;
+        }
+        td {
+        background-color: #1a1a1a;
+        }
+
   </style>
 </head>
 <body>
-  <h1>L'aube de la Mégastructure</h1>
-
-  <p><strong>I. Le Contexte Historique</strong> (Années 2000 environ - Ère de l'Oisiveté)</p>
-  <p>L'histoire de la Mégastructure commence sur une Terre similaire à la nôtre au début du 21ème siècle, mais dont l'évolution sociétale a pris une direction radicalement différente.
-  L'humanité a depuis longtemps atteint une forme d'utopie. Les conflits géopolitiques se sont résorbés, laissant place à une société mondiale unifiée, dont les priorités absolues sont l'harmonie entre les peuples et la recherche du confort social pour tous.
+  <div class="titre-principal">L'aube de la Mégastructure</div>
+  <div class="titre-secondaire">I. Le Contexte Historique (Années 2000 environ - Ère de l'Oisiveté)</div>
+  <p>L'histoire de la Mégastructure commence sur une Terre similaire à la nôtre au début du 21ème siècle, mais dont l'évolution sociétale a pris une direction radicalement différente<br />
+  L'humanité a depuis longtemps atteint une forme d'utopie.<br />
+  Les conflits géopolitiques se sont résorbés, laissant place à une société mondiale unifiée, dont les priorités absolues sont l'harmonie entre les peuples et la recherche du confort social pour tous.<br />
   Les avancées technologiques et scientifiques, bien que significatives, sont entièrement tournées vers l'intérieur : amélioration de la qualité de vie, énergies propres, médecine, gestion optimisée des ressources.</p>
 
-  <p><strong>II. Le Ciel, Domaine du Divin</strong></p>
-  <p>Dans cette société pacifiée, l'exploration spatiale n'a jamais été une priorité. Le ciel, le cosmos, l'espace extra-atmosphérique sont perçus non pas comme une nouvelle frontière à conquérir, mais comme un domaine sacré, spirituel, inviolable :
-  le domaine de Dieu. Tenter de le percer avec des fusées est considéré comme un acte d'orgueil, une hubris inutile et irrespectueuse.</p>
+  <div class="titre-secondaire">II. Le Ciel, Domaine du Divin</div>
+  <p>Dans cette société pacifiée, l'exploration spatiale n'a jamais été une priorité. Le ciel, le cosmos, l'espace extra-atmosphérique sont perçus non pas comme une nouvelle frontière à conquérir, mais comme un domaine sacré, spirituel, inviolable :<br />
+  le domaine de Dieu.<br />
+  Tenter de le percer avec des fusées ou autres engins volants est considéré comme un acte d'orgueil, une hubris inutile et irrespectueuse.</p>
 
-  <p><strong>III. La Stagnation et la Naissance de l'Idée</strong></p>
-  <p>Cette ère de paix et de confort a engendré une conséquence inattendue : une profonde stagnation existentielle. 
-  Sans guerre à mener, sans misère à combattre, sans nouveaux mondes à explorer, l'humanité unifiée se retrouve face à un vide de sens, une absence de grand projet commun pour la canaliser.
-  C'est dans ce contexte que naquit l'idée la plus ambitieuse et la plus folle de l'histoire humaine.
-  Puisque l'on ne peut s'élancer vers le domaine de Dieu, alors on construira une voie pour l'atteindre. L'idée d'une structure planétaire unique, une « tour » s'élevant de la Trame jusqu'au Sommet,
-  fut proposée. Ce ne serait pas un acte de conquête, mais le pèlerinage ultime, une œuvre de dévotion qui unirait toute l'humanité pour des générations.
+  <div class="titre-secondaire">III. La Stagnation et la Naissance de l'Idée</div>
+  <p>Cette ère de paix et de confort a engendré une conséquence inattendue : une profonde stagnation existentielle.<br /> 
+  Sans guerre à mener, sans misère à combattre, sans nouveaux mondes à explorer, l'humanité unifiée se retrouve face à un vide de sens, une absence de grand projet commun pour la canaliser.<br />
+  C'est dans ce contexte que naquit l'idée la plus ambitieuse et la plus folle de l'histoire humaine.<br />
+  Puisque l'on ne peut s'élancer vers le domaine de Dieu, alors on construira une voie pour l'atteindre. L'idée d'une structure planétaire unique, une « tour » s'élevant de la Trame jusqu'au Sommet, fut proposée.<br />
+  Ce ne serait pas un acte de conquête, mais le pèlerinage ultime, une œuvre de dévotion qui unirait toute l'humanité pour des générations.<br />
   Le projet de la Mégastructure était né.</p>
 
 </body>
