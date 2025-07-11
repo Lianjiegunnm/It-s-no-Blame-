@@ -5,87 +5,103 @@
   <title>Âge 1 - It's no Blame</title>
   <style>
     body {
-      background-color: #0d0d0d;
-      color: #f0f0f0;
-      font-family: monospace;
-      padding: 2em;
-      line-height: 1.6;
+        background-color: #0d0d0d;
+        color: #f0f0f0;
+        font-family: monospace;
+        padding: 2em;
+        line-height: 1.6;
     }
 
-    /* Classes de titres */
-    .bandeau-titre {
-      font-size: 2.5em;
-      font-weight: bold;
-      margin-bottom: 1em;
-      border-bottom: 2px solid #888;
-      padding-bottom: 0.3em;
-    }
+        /* Titre 📑 / 📜 — le plus imposant */
+        .bandeau-titre {
+        font-size: 2.8em;
+        font-weight: bold;
+        margin-top: 2.5em;   /* grand espace au-dessus */
+        margin-bottom: 1em; /* grand espace en dessous */
+        border-bottom: 2px solid #1a1a1a;
+        padding-bottom: 0.4em;
+        color: #ffe08a; /* couleur dorée pâle */
+        }
 
-    .titre-principal {
-      font-size: 1.8em;
-      font-weight: bold;
-      margin-top: 1em;
-      padding-left: 0em;
-    }
+        /* Titre principal (niveau haut) */
+        .titre-principal {
+        font-size: 1.9em;
+        font-weight: bold;
+        margin-top: 1.2em; /* espace avant le titre principal */
+        margin-bottom: 1.2em; /* espace après */
+        padding-left: 0em;
+        color: rgb(64, 64, 216);
+        }
 
-    .titre-secondaire {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin-top: 1em;
-      padding-left: 1em;
-    }
+        /* Titre secondaire (sous-ensemble du principal) */
+        .titre-secondaire {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        padding-left: 1.5em;
+        color: rgb(48, 201, 117);
+        }
 
-    .titre-tertiaire {
-      font-size: 1.2em;
-      font-weight: bold;
-      margin-top: 0.8em;
-      padding-left: 2em;
-    }
+        /* Titre tertiaire (sous-ensemble du secondaire) */
+        .titre-tertiaire {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        padding-left: 3em;
+        color: rgb(200, 38, 178);
+        }
 
-    p {
-      margin-bottom: 1em;
-      padding-left: 2.5em;
-    }
+        /* Paragraphe */
+        p {
+        margin-top: 0;
+        margin-bottom: 1em;
+        padding-left: 4em;
+        }
 
-    pre, code {
-      background-color: #1a1a1a;
-      padding: 1em;
-      display: block;
-      white-space: pre-wrap;
-      margin-left: 3em;
-      margin-bottom: 1.5em;
-      border-left: 4px solid #444;
-    }
+        /* Bloc de texte type logs / code / schémas */
+        pre, code {
+        background-color: #1a1a1a;
+        padding: 1em;
+        display: block;
+        white-space: pre-wrap;
+        margin-left: 4em;
+        margin-top: 0;
+        margin-bottom: 1.5em;
+        border-left: 4px solid #1a1a1a;
+        font-size: 0.95em;
+        }
 
-    table {
-      border-collapse: collapse;
-      margin-left: 3em;
-      margin-bottom: 2em;
-    }
+        /* Tableau */
+        table {
+        border-collapse: collapse;
+        margin-left: 4em;
+        margin-bottom: 2em;
+        font-size: 0.95em;
+        }
+        table, th, td {
+        border: 1px solid #888;
+        padding: 0.5em 1em;
+        }
+        th {
+        background-color: #1a1a1a;
+        }
+        td {
+        background-color: #1a1a1a;
+        }
 
-    table, th, td {
-      border: 1px solid #888;
-      padding: 0.5em 1em;
-    }
-
-    th {
-      background-color: #222; 
-    }
-
-    td {
-      background-color: #111;
-    }
   </style>
 </head>
 <body>
     
     <div class="bandeau-titre">📄 Rapport Technique Préliminaire</div>
 
-    <hdiv class="titre-principal">Projet “Superstructure d’Élévation Globale”</div>
-    <div class="titre secondaire">🔹1 Contexte et Objectifs</div>
+    <div class="titre-principal">Projet “Superstructure d’Élévation Globale”</div>
+    <div class="titre-secondaire">🔹1 Contexte et Objectifs</div>
     <p>Le présent document synthétise les résultats de l’étude de faisabilité concernant la construction d’une plateforme continue couvrant l’intégralité de la surface terrestre, à une altitude constante de 100 mètres,<br /> 
     conformément aux prescriptions doctrinales du Haut Conseil d’Ascension.</p>
-    <div class="titre secondaire">🔹2. Hypothèses de Modélisation</div>
+    <div class="titre-secondaire">🔹2. Hypothèses de Modélisation</div>
     <pre><code>
             • Rayon terrestre moyen : 6 371 km
             • Surface totale : ~510 000 000 km²
@@ -95,10 +111,8 @@
             • Facteur de sécurité minimal : ×3
             • Résistance moyenne à la compression : ~130 GPa (hypothèse optimale)
             • Charge dynamique supplémentaire (vents extrêmes, séismes, dilatation thermique) : +15%
-    </pre></code>
-
-        
-    <div class="titre secondaire">🔹3. Résultats des calculs de charge et de support</div>
+    </code></pre>
+    <div class="titre-secondaire">🔹3. Résultats des calculs de charge et de support</div>
     <div class="titre-tertiaire">3.1. Charge Totale Pondérée</div>
     <pre><code>
             • Charge statique totale estimée : ~1,15×10¹⁶ tonnes
@@ -120,7 +134,7 @@
             • 
             • Ensemble = Module de distribution de charges
 
-    </pre></code>
+    </code></pre>
 
     <div class="titre-tertiaire">3.2. Capacité Portante Unitaire</div>
     <pre><code>
@@ -129,7 +143,7 @@
             • Résistance théorique : ~1,04×10⁹ tonnes
             • Résistance effective sous contraintes cumulées : ~8,9×10⁸ tonnes par pilier
 
-    </pre></code>
+    </code></pre>
             
     <div class="titre-tertiaire">3.3. Nombre de Piliers Théorique Minimal</div>
     <pre><code>    
@@ -137,9 +151,9 @@
             (3,96×10¹⁶ t) ÷ (8,9×10⁸ t) ≈ 44 500 piliers
             (Nombre intégrant la redondance structurelle.)
 
-    </pre></code>
+    </code></pre>
 
-    <div class="titre secondaire">🔹4. Contraintes Régionales Spécifiques</div>
+    <div class="titre-secondaire">🔹4. Contraintes Régionales Spécifiques</div>
     <div class="titre-tertiaire">4.1. Zones Sismiques Prioritaires</div>
     <pre><code>
             • Faille Pacifique / Ceinture de feu : renforcement ×2 recommandé.
@@ -177,10 +191,8 @@
             • (B) = Renfort sismique ×1,5
             • (C) = Fondation profonde critique
 
-    </pre></code>   
-
-
-    <div class="titre secondaire">🔹5. Système de Stabilisation Transversale par Arches de Voûte</div>
+    </code></pre>  
+    <div class="titre-secondaire">🔹5. Système de Stabilisation Transversale par Arches de Voûte</div>
     <div class="titre-tertiaire">5.1. Raison d’être</div>
             <p>Pour limiter les contraintes latérales et éviter l’effet domino en cas de rupture partielle, chaque pilier principal sera relié à ses voisins via un réseau d’arcs de voûte massifs.</p>
 
@@ -191,8 +203,8 @@
             • Matériau : composite graphène/fibres haute tension.
             • Capacité d’absorption dynamique : ±3 m de déformation instantanée.
             • Résistance sismique accrue : facteur multiplicatif de stabilité ×2,3.
-    </pre></code>
 
+    </code></pre>
     <div class="titre-tertiaire">5.3. Schéma Simplifié</div>
     <pre><code>
             markdown
@@ -211,8 +223,8 @@
                         Pilier                 Pilier
                         Adjac.               Adjac.
 
-    </pre></code>
 
+    </code></pre>
     <div class="titre-tertiaire">5.4. Effets sur le dimensionnement</div>
     <pre><code>   
             L’intégration de ces arches augmente la répartition des charges :
@@ -220,9 +232,8 @@
                 • Nouveau total estimé : ~36 000 piliers principaux, assortis de micro-piliers satellites pour redondance.
                 • Charge dynamique répartie sur trame rigide de stabilisation.
 
-    </pre></code>
-
-    <div class="titre secondaire">🔹6. Recommandations Techniques Complémentaires</div>
+    </code></pre>
+    <div class="titre-secondaire">🔹6. Recommandations Techniques Complémentaires</div>
     <pre><code>    
                 1. Renfort Sismique :Implantation de 6 200 piliers additionnels en zones de faille.
                                         
@@ -234,9 +245,8 @@
                                         
                 5. Maintenance Permanente : Planification de cycles d’inspection sur 500 ans par secteurs de 100 km².
 
-    </pre></code>
-                                        
-    <div class="titre secondaire">🔹7. Synthèse et Évaluation</div>
+    </code></pre>                                     
+    <div class="titre-secondaire">🔹7. Synthèse et Évaluation</div>
     <pre><code>
             Paramètre	Valeur
             Surface totale	~510 millions km²
@@ -248,8 +258,7 @@
             Facteur de sécurité global	×3 (base) ×2,3 (arches)
 
     </code></pre>
-
-    <div class="titre secondaire">🔹8. Conclusion</div>
+    <div class="titre-secondaire">🔹8. Conclusion</div>
     <pre><code>
             L’étude confirme la faisabilité théorique de la Superstructure d’Élévation Globale, sous réserve :
             • d’un approvisionnement massif en matériaux composites,
@@ -262,32 +271,27 @@
 
 
 
-    </code></pre>
-
-
+    </code></pre>    
     <div class="bandeau-titre">📑 Bulletin de Validation Technique</div>
-    <div class="titre-principal">Référence interne : BVT-01/SGEP</div>
-
+    <div class="titre-principal">Référence interne : BVT-01/SGEP</div>    
     <pre><code>   
         Émis par : Commission Technique Supérieure d’Élévation
         Date de diffusion : 
 
-    </code></pre>     
-
+    </code></pre>
     <div class="titre-tertiaire">🔹 Objet</div>
+    <pre><code>
+        Validation de la faisabilité technique des fondations et de l’élévation initiale de la Superstructure d’Élévation Globale.
 
-        <p>Validation de la faisabilité technique des fondations et de l’élévation initiale de la Superstructure d’Élévation Globale.</p>
-
-
+    </code></pre>
     <div class="titre-tertiaire">🔹 Résumé de l’analyse</div>
-
     <pre><code>
         Le protocole d’évaluation comparative a été mené selon les standards suivants :
             • Normes unifiées d’élévation (NUE-SG/208)
             • Protocoles de simulation multi-paramétrique (PSMP-R7)
             • Modèle de charge cumulée (MCC-X4)
-    </code></pre>
 
+    </code></pre>
     <div class="titre-tertiaire">🔹 Résultats</div>
     <pre><code>
         Paramètre évalué	Résultat observé
@@ -296,8 +300,8 @@
         Capacité portante unitaire (pilier principal)	Conforme (8,9×10⁸ tonnes)
         Durée estimée d’assemblage fondations	184 cycles unitaires (≈500 ans)
         Efficacité de la redondance structurelle	Conforme (Facteur sécurité ×3)
-    </code></pre>
 
+    </code></pre>
     <div class="titre-tertiaire">🔹 Conclusion</div>
     <pre><code>
         La faisabilité technique de l’élévation initiale est validée sous réserve d’implantation préalable du réseau de micro-piliers satellites et d’un contrôle strict de l’intégrité des composites pendant la phase de coulage.
@@ -310,23 +314,19 @@
 
 
     </code></pre>
-
-
-
     <div class="bandeau-titre">📑 Bulletin de Validation Dynamique</div>
-    <pre>
+    <pre><code>
 
         Référence interne : BVD-02/SGEP
         Émis par : Département Analyse des Contraintes Dynamiques
         Date de diffusion : 
 
-    </pre>
+    </code></pre>
     <div class="titre-tertiaire">🔹 Objet</div>
     <pre><code>
             Validation de la capacité de la Superstructure à supporter les contraintes dynamiques majeures (sismiques et atmosphériques).
 
     </code></pre>
-
     <div class="titre-tertiaire">🔹 Résumé de l’analyse</div>
     <pre><code>
         Simulation multi-scénarios :
@@ -335,7 +335,6 @@
             • Variation thermique extrême ΔT ±90 °C
 
     </code></pre>
-
     <div class="titre-tertiaire">🔹 Résultats</div>
     <pre><code>
         Scénario simulé	Niveau de contrainte	Résilience projetée
@@ -345,8 +344,7 @@
         Rupture localisée d’un pilier principal	Élevé	Charge redirigée sans effondrement systémique
 
     </code></pre>
-
-    <div class="titre-tertiaire">🔹 Conclusion
+    <div class="titre-tertiaire">🔹 Conclusion</div>
     <pre><code>
         Le système de stabilisation par arches de voûte et haubanage croisé assure une résilience dynamique satisfaisante. Les marges de tolérance dépassent les seuils réglementaires.
 
@@ -358,8 +356,6 @@
 
 
     </code></pre>
-
-
     <div class="bandeau-titre">📑 Bulletin de Validation Environnementale</div>
     <pre><code>
         Référence interne : BVE-03/SGEP
@@ -412,8 +408,10 @@
     <div class="titre-tertiaire">🔹 Objet</div>
     <pre><code>
         Estimation budgétaire prévisionnelle du projet Superstructure d’Élévation Globale sur l’intégralité du cycle constructif.
-
-        🔹 Résumé de l’estimation
+    
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Résumé de l’estimation</div>
+    <pre><code>
             • Période d’élévation prévisionnelle : ~500 ans
             • Période de stabilisation et complétion : ~200 ans supplémentaires
             • Taux d’approvisionnement en matériaux composites : ~4% de la production annuelle totale de la civilisation
@@ -539,7 +537,7 @@
             • Rotation obligatoire des équipes tous les 20 cycles pour éviter l’épuisement
             • Rédaction d’un catéchisme unifié explicitant le lien entre effort et Salut
     
-        </code></pre>
+    </code></pre>
     <div class="titre-tertiaire">🔹 Conclusion</div>
     <pre><code>
         Le protocole est validé, sous réserve de la mise en place des structures religieuses d’accompagnement et de la surveillance psychologique renforcée.
