@@ -9,33 +9,84 @@
       color: #f0f0f0;
       font-family: monospace;
       padding: 2em;
-      line-height: 1.5;
+      line-height: 1.6;
     }
-    h1,h2,h3,h4,h5,h6 {
+
+    /* Classes de titres */
+    .bandeau-titre {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-bottom: 1em;
+      border-bottom: 2px solid #888;
+      padding-bottom: 0.3em;
+    }
+
+    .titre-principal {
       font-size: 1.8em;
       font-weight: bold;
-      margin-top: 0.5em;
-      border-bottom: 1px solid #444;
-      padding-bottom: 0.2em;
+      margin-top: 1em;
+      padding-left: 0em;
     }
+
+    .titre-secondaire {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-top: 1em;
+      padding-left: 1em;
+    }
+
+    .titre-tertiaire {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-top: 0.8em;
+      padding-left: 2em;
+    }
+
     p {
       margin-bottom: 1em;
+      padding-left: 2.5em;
+    }
+
+    pre, code {
+      background-color: #1a1a1a;
+      padding: 1em;
+      display: block;
+      white-space: pre-wrap;
+      margin-left: 3em;
+      margin-bottom: 1.5em;
+      border-left: 4px solid #444;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin-left: 3em;
+      margin-bottom: 2em;
+    }
+
+    table, th, td {
+      border: 1px solid #888;
+      padding: 0.5em 1em;
+    }
+
+    th {
+      background-color: #222; 
+    }
+
+    td {
+      background-color: #111;
     }
   </style>
 </head>
 <body>
     
-    <h1>📄 Rapport Technique Préliminaire</h1>
+    <div class="bandeau-titre">📄 Rapport Technique Préliminaire</div>
 
-        <h2>Projet “Superstructure d’Élévation Globale”</h2>
-
-        <p><strong>1. Contexte et Objectifs</strong></p>
-           <p>Le présent document synthétise les résultats de l’étude de faisabilité concernant la construction d’une plateforme continue couvrant l’intégralité de la surface terrestre, à une altitude constante de 100 mètres,<br /> 
-            conformément aux prescriptions doctrinales du Haut Conseil d’Ascension.</p>
-
-        <p><strong></strong>2. Hypothèses de Modélisation</strong></p>
-
-        <pre><code>
+    <hdiv class="titre-principal">Projet “Superstructure d’Élévation Globale”</div>
+    <div class="titre secondaire">🔹1 Contexte et Objectifs</div>
+    <p>Le présent document synthétise les résultats de l’étude de faisabilité concernant la construction d’une plateforme continue couvrant l’intégralité de la surface terrestre, à une altitude constante de 100 mètres,<br /> 
+    conformément aux prescriptions doctrinales du Haut Conseil d’Ascension.</p>
+    <div class="titre secondaire">🔹2. Hypothèses de Modélisation</div>
+    <pre><code>
             • Rayon terrestre moyen : 6 371 km
             • Surface totale : ~510 000 000 km²
             • Épaisseur structurelle moyenne : 10 mètres
@@ -44,13 +95,12 @@
             • Facteur de sécurité minimal : ×3
             • Résistance moyenne à la compression : ~130 GPa (hypothèse optimale)
             • Charge dynamique supplémentaire (vents extrêmes, séismes, dilatation thermique) : +15%
-        </pre></code>
+    </pre></code>
 
         
-        <p><strong>3. Résultats des calculs de charge et de support</strong></p>
-            <p><strong>3.1. Charge Totale Pondérée</strong></p>
-
-        <pre><code>
+    <div class="titre secondaire">🔹3. Résultats des calculs de charge et de support</div>
+    <div class="titre-tertiaire">3.1. Charge Totale Pondérée</div>
+    <pre><code>
             • Charge statique totale estimée : ~1,15×10¹⁶ tonnes
             • Charge dynamique additionnelle : +1,73×10¹⁵ tonnes
             • Facteur de sécurité appliqué : ×3
@@ -69,27 +119,29 @@
             • o = Micro-pilier satellite (3 m diamètre)
             • 
             • Ensemble = Module de distribution de charges
-        </pre></code>
 
-        <p><strong>3.2. Capacité Portante Unitaire</strong></p>
+    </pre></code>
 
-        <pre><code>
+    <div class="titre-tertiaire">3.2. Capacité Portante Unitaire</div>
+    <pre><code>
             • Pilier de référence : Cylindre de 10 m de diamètre
             • Surface d’appui : ~78,5 m²
             • Résistance théorique : ~1,04×10⁹ tonnes
             • Résistance effective sous contraintes cumulées : ~8,9×10⁸ tonnes par pilier
-        </pre></code>
+
+    </pre></code>
             
-        <p><strong>3.3. Nombre de Piliers Théorique Minimal</strong></p>
-        <pre><code>    
+    <div class="titre-tertiaire">3.3. Nombre de Piliers Théorique Minimal</div>
+    <pre><code>    
             • Charge cumulée ÷ résistance effective unitaire :
             (3,96×10¹⁶ t) ÷ (8,9×10⁸ t) ≈ 44 500 piliers
             (Nombre intégrant la redondance structurelle.)
-        </pre></code>
 
-        <p><strong>4. Contraintes Régionales Spécifiques</strong></p>
-            <p><strong>4.1. Zones Sismiques Prioritaires</strong></p>
-        <pre><code>
+    </pre></code>
+
+    <div class="titre secondaire">🔹4. Contraintes Régionales Spécifiques</div>
+    <div class="titre-tertiaire">4.1. Zones Sismiques Prioritaires</div>
+    <pre><code>
             • Faille Pacifique / Ceinture de feu : renforcement ×2 recommandé.
             • Faille Méditerranéenne : renforcement ×1,5.
             • Rift Est-Africain : nécessité de fondations profondes et ancrage différentiel.
@@ -124,24 +176,25 @@
             • (A) = Renfort sismique ×2
             • (B) = Renfort sismique ×1,5
             • (C) = Fondation profonde critique
-        </pre></code>   
+
+    </pre></code>   
 
 
-        <p><strong>5. Système de Stabilisation Transversale par Arches de Voûte</strong></p>
-            <p><strong>5.1. Raison d’être</strong></p>
+    <div class="titre secondaire">🔹5. Système de Stabilisation Transversale par Arches de Voûte</div>
+    <div class="titre-tertiaire">5.1. Raison d’être</div>
             <p>Pour limiter les contraintes latérales et éviter l’effet domino en cas de rupture partielle, chaque pilier principal sera relié à ses voisins via un réseau d’arcs de voûte massifs.</p>
 
-            <p><strong>5.2. Caractéristiques Techniques</strong></p>
-        <pre> <code>  
+    <div class="titre-tertiaire">5.2. Caractéristiques Techniques</div>
+    <pre> <code>  
             • Configuration : trame hexagonale à double niveau.
             • Portée standard entre sommets d’arches : 1000 m.
             • Matériau : composite graphène/fibres haute tension.
             • Capacité d’absorption dynamique : ±3 m de déformation instantanée.
             • Résistance sismique accrue : facteur multiplicatif de stabilité ×2,3.
-        </pre></code>
+    </pre></code>
 
-            <p><strong>>5.3. Schéma Simplifié</strong></p>
-        <pre><code>
+    <div class="titre-tertiaire">5.3. Schéma Simplifié</div>
+    <pre><code>
             markdown
            
                 Vue en coupe partielle
@@ -157,18 +210,20 @@
                             ╱                       ╲
                         Pilier                 Pilier
                         Adjac.               Adjac.
-        </pre></code>
 
-            <p><strong>5.4. Effets sur le dimensionnement</strong></p>
-        <pre><code>   
+    </pre></code>
+
+    <div class="titre-tertiaire">5.4. Effets sur le dimensionnement</div>
+    <pre><code>   
             L’intégration de ces arches augmente la répartition des charges :
                 • Réduction du nombre de piliers primaires nécessaires : ~−20%.
                 • Nouveau total estimé : ~36 000 piliers principaux, assortis de micro-piliers satellites pour redondance.
                 • Charge dynamique répartie sur trame rigide de stabilisation.
-        </pre></code>
 
-        <p><strong>6. Recommandations Techniques Complémentaires</strong></p>
-        <pre><code>    
+    </pre></code>
+
+    <div class="titre secondaire">🔹6. Recommandations Techniques Complémentaires</div>
+    <pre><code>    
                 1. Renfort Sismique :Implantation de 6 200 piliers additionnels en zones de faille.
                                         
                 2. Modules de Compensation Thermique :Dilatation contrôlée (ΔT ±90 °C).
@@ -178,11 +233,11 @@
                 4. Surfaces de Distribution de Charges : Micro-piliers satellites (3 m de diamètre) doublant chaque pilier majeur.
                                         
                 5. Maintenance Permanente : Planification de cycles d’inspection sur 500 ans par secteurs de 100 km².
-        </pre></code>
-                                        
-        <p><strong>7. Synthèse et Évaluation</strong></p>
 
-        <pre><code>
+    </pre></code>
+                                        
+    <div class="titre secondaire">🔹7. Synthèse et Évaluation</div>
+    <pre><code>
             Paramètre	Valeur
             Surface totale	~510 millions km²
             Hauteur standard	100 m
@@ -191,10 +246,11 @@
             Diamètre pilier principal	10 m
             Diamètre micro-piliers	3 m
             Facteur de sécurité global	×3 (base) ×2,3 (arches)
-        </code></pre>
 
-        <p><strong>8. Conclusion</strong></p>
-        <pre><code>
+    </code></pre>
+
+    <div class="titre secondaire">🔹8. Conclusion</div>
+    <pre><code>
             L’étude confirme la faisabilité théorique de la Superstructure d’Élévation Globale, sous réserve :
             • d’un approvisionnement massif en matériaux composites,
             • d’un dispositif industriel à échelle planétaire,
@@ -203,35 +259,47 @@
 
             Fin du Rapport
             Document classé – Diffusion Restreinte – Corps des Ingénieurs Planétaires
-        </code></pre>
 
 
-        📑 Bulletin de Validation Technique
-        Référence interne : BVT-01/SGEP
+
+    </code></pre>
+
+
+    <div class="bandeau-titre">📑 Bulletin de Validation Technique</div>
+    <div class="titre-principal">Référence interne : BVT-01/SGEP</div>
+
+    <pre><code>   
         Émis par : Commission Technique Supérieure d’Élévation
         Date de diffusion : 
 
-        🔹 Objet
+    </code></pre>     
 
-        Validation de la faisabilité technique des fondations et de l’élévation initiale de la Superstructure d’Élévation Globale.
+    <div class="titre-tertiaire">🔹 Objet</div>
+
+        <p>Validation de la faisabilité technique des fondations et de l’élévation initiale de la Superstructure d’Élévation Globale.</p>
 
 
-        🔹 Résumé de l’analyse
+    <div class="titre-tertiaire">🔹 Résumé de l’analyse</div>
 
+    <pre><code>
         Le protocole d’évaluation comparative a été mené selon les standards suivants :
             • Normes unifiées d’élévation (NUE-SG/208)
             • Protocoles de simulation multi-paramétrique (PSMP-R7)
             • Modèle de charge cumulée (MCC-X4)
+    </code></pre>
 
-        🔹 Résultats
+    <div class="titre-tertiaire">🔹 Résultats</div>
+    <pre><code>
         Paramètre évalué	Résultat observé
         Résistance moyenne en compression	Conforme (130 GPa ±5%)
         Cohérence de la trame portante hexagonale	Conforme (>95% d’efficacité projetée)
         Capacité portante unitaire (pilier principal)	Conforme (8,9×10⁸ tonnes)
         Durée estimée d’assemblage fondations	184 cycles unitaires (≈500 ans)
         Efficacité de la redondance structurelle	Conforme (Facteur sécurité ×3)
+    </code></pre>
 
-        🔹 Conclusion
+    <div class="titre-tertiaire">🔹 Conclusion</div>
+    <pre><code>
         La faisabilité technique de l’élévation initiale est validée sous réserve d’implantation préalable du réseau de micro-piliers satellites et d’un contrôle strict de l’intégrité des composites pendant la phase de coulage.
 
         Validation :
@@ -241,77 +309,108 @@
 
 
 
-    <h3>📑 Bulletin de Validation Dynamique</h3>
+    </code></pre>
+
+
+
+    <div class="bandeau-titre">📑 Bulletin de Validation Dynamique</div>
     <pre>
+
         Référence interne : BVD-02/SGEP
         Émis par : Département Analyse des Contraintes Dynamiques
         Date de diffusion : 
 
-        🔹 Objet
-        Validation de la capacité de la Superstructure à supporter les contraintes dynamiques majeures (sismiques et atmosphériques).
+    </pre>
+    <div class="titre-tertiaire">🔹 Objet</div>
+    <pre><code>
+            Validation de la capacité de la Superstructure à supporter les contraintes dynamiques majeures (sismiques et atmosphériques).
 
-        🔹 Résumé de l’analyse
+    </code></pre>
+
+    <div class="titre-tertiaire">🔹 Résumé de l’analyse</div>
+    <pre><code>
         Simulation multi-scénarios :
             • Séisme magnitude 9,5 (épicentre Ceinture de Feu)
             • Cyclone cat. 6 (vent > 500 km/h)
             • Variation thermique extrême ΔT ±90 °C
 
-        🔹 Résultats
+    </code></pre>
+
+    <div class="titre-tertiaire">🔹 Résultats</div>
+    <pre><code>
         Scénario simulé	Niveau de contrainte	Résilience projetée
         Séisme magnitude 9,5	Élevé	Déformation élastique &lt;2 m
         Cyclone catégorie 6	Moyen	Déflexion &lt;1,2 m
         Variation thermique extrême	Moyen	Déformation contrôlée
         Rupture localisée d’un pilier principal	Élevé	Charge redirigée sans effondrement systémique
 
-        🔹 Conclusion
+    </code></pre>
+
+    <div class="titre-tertiaire">🔹 Conclusion
+    <pre><code>
         Le système de stabilisation par arches de voûte et haubanage croisé assure une résilience dynamique satisfaisante. Les marges de tolérance dépassent les seuils réglementaires.
 
         Validation :
         ✔️ Accord technique intégral
         Signature :
         Ing. Dyn. R. Jaldar
-    </pre>
 
 
-    <h4>📑 Bulletin de Validation Environnementale</h4>
-    <pre>
+
+    </code></pre>
+
+
+    <div class="bandeau-titre">📑 Bulletin de Validation Environnementale</div>
+    <pre><code>
         Référence interne : BVE-03/SGEP
         Émis par : Cellule Analyse Environnements Extrêmes
         Date de diffusion : Cycle 486 – Séquence 09
 
-        🔹 Objet
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Objet</div>
+    <pre><code>
         Validation de la compatibilité de la Superstructure avec les environnements extrêmes (cryogénique et tropical).
 
-        🔹 Résumé de l’analyse
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Résumé de l’analyse</div>
+    <pre><code>
         Évaluation spécifique :
             • Zones polaires : contraintes cryogéniques prolongées
             • Zones équatoriales : dilatation thermique maximale
             • Régions océaniques : corrosion saline
 
-        🔹 Résultats
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Résultats</div>
+    <pre><code>
         Environnement testé	Résultat projeté
-        Zone cryogénique (< -80 °C)	Composite flexible conservant 95% résistance
-        Zone tropicale (> +60 °C)	Dilatation compensée sans perte d’intégrité
+        Zone cryogénique (&lt; -80 °C)	Composite flexible conservant 95% résistance
+        Zone tropicale (&gt; +60 °C)	Dilatation compensée sans perte d’intégrité
         Milieu salin océanique	Résistance corrosion >99% (300 ans)
         Cycles thermiques extrêmes	Aucune rupture observée en simulation
 
-        🔹 Conclusion
+    </code></pre>
+
+    <div class="titre-tertiaire">🔹 Conclusion</div>
+    <pre><code>   
         Les propriétés des composites employés répondent aux contraintes environnementales les plus extrêmes, avec une marge de sécurité excédant 20% sur l’ensemble des zones analysées.
 
         Validation :
         ✔️ Accord technique intégral
         Signature :
         Ing. Env. A. Narell
-    </pre>
 
 
-    <h5>📑 Bulletin de Validation Budgétaire</h5>
-    <pre>
+
+    </code></pre> 
+    <div class="bandeau-titre">📑 Bulletin de Validation Budgétaire</div>
+    <pre><code>
         Référence interne : BVB-04/SGEP
         Émis par : Bureau Central d’Allocation des Ressources
         Date de diffusion : Cycle 486 – Séquence 14
 
-        🔹 Objet
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Objet</div>
+    <pre><code>
         Estimation budgétaire prévisionnelle du projet Superstructure d’Élévation Globale sur l’intégralité du cycle constructif.
 
         🔹 Résumé de l’estimation
@@ -321,7 +420,9 @@
             • Volume d’extraction minérale requis : ~2,1×10¹⁴ tonnes
             • Consommation énergétique cumulative : ~1,9×10²³ Joules
 
-        🔹 Répartition prévisionnelle des coûts
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Répartition prévisionnelle des coûts</div>
+    <pre><code>
         Poste budgétaire principal	Part estimée
         Extraction et raffinage	32%
         Production des composites	24%
@@ -329,93 +430,125 @@
         Assemblage et élévation progressive	16%
         Systèmes de stabilisation transversale	6%
         Maintenance préventive initiale	4%
-
-        🔹 Réserves
+    
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Réserves</div>
+    <pre><code>
         Les fluctuations de production et d’acheminement dans les zones sismiques et polaires peuvent engendrer un dépassement budgétaire estimé entre +18% et +25%.
-
-        🔹 Conclusion
+    
+    </code></pre>   
+    <div class="titre-tertiaire">🔹 Conclusion</div>
+    <pre><code>
         Le budget prévisionnel est validé sous réserve d’une planification inter-générationnelle et d’un engagement industriel total sans interruption significative.
 
         Validation :
         ✔️ Accord technique sous réserve
         Signature :
         Dir. Budget E. Clarian
-    </pre>
 
 
-    <h6>📑 Bulletin de Validation Doctrinale</h6>
-    <pre>
+
+    </code></pre>
+    <div class="bandeau-titre">📑 Bulletin de Validation Doctrinale</div>
+    <pre><code>
         Référence interne : BVD-05/SGEP
         Émis par : Conseil Suprême de la Foi Ascensionnelle
         Date de diffusion : Cycle 486 – Séquence 18
-
-        🔹 Objet
+    
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Objet</div>
+    <pre><code>
         Conformité doctrinale du projet Superstructure d’Élévation Globale aux préceptes fondateurs de l’Ascension.
-
-        🔹 Résumé doctrinal
+    
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Résumé doctrinal</div>
+    <pre><code>
         Après examen approfondi des Écrits de l’Ancêtre Ussoî et des Commentaires de la Troisième Synarchie, le Conseil Suprême confirme :
             • Que l’élévation physique est un prolongement légitime de l’élévation spirituelle.
             • Que la structure est considérée comme une manifestation tangible de la dévotion collective.
             • Que la construction elle-même est un acte de purification et de préparation de l’humanité au contact divin.
-
-        🔹 Références théologiques
+    
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Références théologiques</div>
+    <pre><code>
         “Celui qui érige le plancher, ne construit pas un édifice : il trace le seuil.”
         (Synarchie I, Codex 23, Fragment CXXI)
         “Le Ciel n’est pas un interdit, mais un pacte. Honore le, alors tu m’atteindra ”
         (Synarchie III, Codex 9)
 
-        🔹 Conclusion
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Conclusion</div>
+    <pre><code>
         Le projet est doctrinalement légitime et reçoit la bénédiction formelle du Conseil Suprême.
 
         Validation :
         ✔️ Accord doctrinal intégral
         Signature :
         Arche-Hiérarque M. Delyr
-    </pre>
 
 
-    <h6>📑 Bulletin de Validation Opérationnelle : Gestion de la Main d’Œuvre</h6>
-    <pre>
+
+    </code></pre>
+    <div class="bandeau-titre">📑 Bulletin de Validation Opérationnelle : Gestion de la Main d’Œuvre</div>
+    <pre><code>
         Référence interne : BVO-06/SGEP
         Émis par : Haut Commissariat de Coordination Sociale
         Date de diffusion : 
 
-        🔹 Objet
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Objet</div>
+    <pre><code>
         Évaluation et validation des protocoles de mobilisation, formation et intégration spirituelle de la main d’œuvre nécessaire au projet.
-
-        🔹 Résumé des effectifs prévisionnels
+    
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Résumé des effectifs prévisionnels</div>
+    <pre><code>
             • Population totale impliquée : ~180 millions de travailleurs
             • Main d’œuvre directe : ~45 millions
             • Corps de maintenance spécialisée : ~12 millions
             • Corps spirituel et clergé d’accompagnement : ~5 millions
-
-        🔹 Protocoles d’intégration
-        1. Mobilisation
+    
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Protocoles d’intégration</div>
+    <pre><code>  
+        1. Mobilisation :
             • Répartition régionale proportionnelle à la densité démographique
             • Recrutement volontaire prioritaire
-        2. Formation
+
+        2. Formation :
             • Enseignement technique de base obligatoire (cycle de 10 ans)
             • Formation spirituelle complémentaire (cycle de 3 ans)
-        3. Aspects religieux
+
+        3. Aspects religieux :
             • Chaque chantier majeur disposera d’un Sanctuaire d’Élévation
             • Les cycles de travail comprendront des rites hebdomadaires de consécration des matériaux
             • Les équipes seront accompagnées par des guides spirituels attitrés
 
-        🔹 Risques identifiés
+
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Risques identifiés</div>
+    <pre><code>
             • Risque de saturation logistique dans les zones de faille
             • Risque de perte de motivation à long terme
             • Risque de dérive sectaire locale
-
-        🔹 Recommandations
+        
+    </code></pre>
+    <div class="titre-tertiaire">🔹 Recommandations</div>
+    <pre><code>
             • Création d’un Office de l’Édification Sacrée centralisant l’instruction doctrinale
             • Rotation obligatoire des équipes tous les 20 cycles pour éviter l’épuisement
             • Rédaction d’un catéchisme unifié explicitant le lien entre effort et Salut
-
-        🔹 Conclusion
+    
+        </code></pre>
+    <div class="titre-tertiaire">🔹 Conclusion</div>
+    <pre><code>
         Le protocole est validé, sous réserve de la mise en place des structures religieuses d’accompagnement et de la surveillance psychologique renforcée.
 
         Validation :
         ✔️ Accord opérationnel sous conditions
         Signature :
         Com. Coord. S. Yedren
-    </pre>
+
+    </code></pre>
+</body>
+</html>
