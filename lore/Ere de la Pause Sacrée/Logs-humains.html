@@ -50,7 +50,7 @@
         margin-top: 1em;
         margin-bottom: 0.5em;
         padding-left: 3em;
-        color: rgb(200, 38, 178);
+        color: rgb(243, 162, 232);
         }
 
         /* Paragraphe */
@@ -62,7 +62,7 @@
 
         /* Bloc de texte type logs / code / schémas */
         pre, code {
-        background-color: #1a1a1a;
+        background-color: #0a0a0a;
         padding: 1em;
         display: block;
         white-space: pre-wrap;
@@ -72,6 +72,26 @@
         border-left: 4px solid #1a1a1a;
         font-size: 0.95em;
         }
+        
+        /* Dialogue */
+        .dialogue {
+          margin-left: 4em;
+          margin-bottom: 4em;
+        }
+
+        .dialogue p {
+          margin-top: 0.3em;
+          margin-bottom: 2em; /* augmente ici l'espacement entre les interventions */
+          line-height: 1.5;
+          color: rgb(252, 252, 252);
+          font-family: monospace;  
+        }
+
+        .dialogue-speaker {
+          font-weight: bold;
+          color: rgb(251, 77, 80);
+        }
+
 
         /* Tableau */
         table {
@@ -94,102 +114,88 @@
   </style>
 </head>
 <body>
-    <div class="titre-principal">Log Humain divers</div> 
-    📜 Log – Année 2217
-Rapport d’état de progression de la Superstructure
+    <div class="bandeau-titre">Log Humain divers</div> 
+    <div class="titre-principal">📜 Log – Année 2217</div>
+    <div class="titre-secondaire">Rapport d’état de progression de la Superstructure</div>
+    <p>La croissance inégale des segments est désormais confirmée comme un facteur critique ralentissant l’Élévation.<br />
+    La répartition démographique des populations laborieuses, ainsi que leur densité variable, ont provoqué des déséquilibres majeurs dans l’avancement des chantiers.<br />
+    Dans certains secteurs, principalement ceux bénéficiant d’un excédent de main-d’œuvre et d’une tradition fervente, la structure a d’ores et déjà dépassé les 2 000 mètres d’altitude.<br />
+    À l’inverse, plusieurs zones périphériques peinent encore à franchir le seuil symbolique des 100 mètres.<br />
+    Ce différentiel de hauteur compromet la stabilité générale et limite la vitesse d’élévation horizontale, les arches de voûte ne pouvant être consolidées qu’à des niveaux à peu près homogènes.<br />
+    Des mesures correctives sont actuellement à l’étude, incluant :<br />
+       # 1 • le transfert partiel de contingents ouvriers,<br />
+       # 2 • la redistribution prioritaire des ressources,<br />
+       # 3 • et l’intensification des campagnes de motivation doctrinale.<br />
+    Sans rééquilibrage rapide, la progression synchronisée de la Tour ne pourra être maintenue.</p>
 
-La croissance inégale des segments est désormais confirmée comme un facteur critique ralentissant l’Élévation.
-La répartition démographique des populations laborieuses, ainsi que leur densité variable, ont provoqué des déséquilibres majeurs dans l’avancement des chantiers.
-Dans certains secteurs, principalement ceux bénéficiant d’un excédent de main-d’œuvre et d’une tradition fervente, la structure a d’ores et déjà dépassé les 2 000 mètres d’altitude.
-À l’inverse, plusieurs zones périphériques peinent encore à franchir le seuil symbolique des 100 mètres.
-Ce différentiel de hauteur compromet la stabilité générale et limite la vitesse d’élévation horizontale, les arches de voûte ne pouvant être consolidées qu’à des niveaux à peu près homogènes.
-Des mesures correctives sont actuellement à l’étude, incluant :
-    • le transfert partiel de contingents ouvriers,
-    • la redistribution prioritaire des ressources,
-    • et l’intensification des campagnes de motivation doctrinale.
-Sans rééquilibrage rapide, la progression synchronisée de la Tour ne pourra être maintenue.
+    <div class="titre-principal">📜 Log – Année 2343</div>
+    <div class="titre-secondaire">Superviseur Général – Secteur 7-A</div>
+    <p>Que le Seigneur nous pardonne, mais la triste vérité est que nous n’y arriverons pas.<br />
+    Mes frères et sœurs sont solides, et la foi les soutient, mais…<br />
+    Nous n’y arriverons pas. Pas ainsi.<br />
+    Il faut trouver un moyen d’homogénéiser la croissance.<br />
+    Nous ne pouvons échouer.<br />
+    Il en est hors de question.</p>
 
+    <div class="titre-principal">📜 Log – Année 2347</div>
+    <div class="titre-secondaire">Sénat de l’Ascension</div>
+    <div class="titre-tertiaire">Greffier en charge : Calios Desgort</div>
+    
+    <div class="dialogue">
+      <p><span class="dialogue-speaker">Maître d’Audience Gazik</span> : Mes chers confrères,<br />
+      Nombre de rapports en provenance de diverses régions nous parviennent depuis quelque temps.<br />
+      Suite à l’étude sérieuse de ceux-ci, nous devons prendre une décision.<br />
+      Voici donc la raison de cette convocation, qui, j’en conviens, est assez soudaine.</p>
 
-📜 Log – Année 2343
-Superviseur Général – Secteur 7-A
+      <p><span class="dialogue-speaker">Superviseur Lin – Région 6-A</span> : Trêve de politesse, Maître.<br />
+      Nous sommes tous au courant.<br />
+      Cela fait déjà des années que circule la rumeur de l’allocation d’un budget conséquent, dédié à je ne sais quel projet.<br />
+      Allons-nous enfin savoir de quoi il retourne, pour l’amour du ciel ?</p>
+      
 
-Que le Seigneur nous pardonne, mais la triste vérité est que nous n’y arriverons pas.
-Mes frères et sœurs sont solides, et la foi les soutient, mais…
-Nous n’y arriverons pas. Pas ainsi.
-Il faut trouver un moyen d’homogénéiser la croissance.
-Nous ne pouvons échouer.
-Il en est hors de question.
+      <p><span class="dialogue-speaker">Maître d’Audience Gazik</span> : Vous avez raison, Lin.<br />
+      Je vais donc être direct.<br />
+      Cela fait maintenant plus de cinq ans que nous étudions la faisabilité de la production d’automates de construction, destinés à nous assister de manière décisive pour uniformiser la fondation de notre projet.<br />
+      Toutes les études démontrent la viabilité de cette option…</p>
+    </div>
 
-📜 Log – Année 2347
-Sénat de l’Ascension
+    <div class="titre-principal">📜 Log – Année 2347</div>
+    <div class="titre-secondaire">Rapport annuel et prédictibilité – Année 2347/2348</div>
+    <p>Suite à la validation du projet Bâtisseur et à l’instauration de la Pause Sacrée, nous avons procédé à la réallocation ciblée de certains personnels hautement spécialisés.<br />
+    Les disciplines mobilisées incluent notamment :<br />
+        # 1 • l’ingénierie anatomique,<br />
+        # 2 • la robotique,<br />
+        # 3 • la programmation avancée,<br />
+        # 4 • la bio-culture,<br />
+        # 5 • ainsi que d’autres domaines de spécialisation jugés essentiels à la réussite du Projet Bâtisseur.<br />
+    Au total, 14 756 scientifiques ont été officiellement affectés à cette mission.</p>
 
-Maître d’Audience Gazik :
-Mes chers confrères,
-Nombre de rapports en provenance de diverses régions nous parviennent depuis quelque temps.
-Suite à l’étude sérieuse de ceux-ci, nous devons prendre une décision.
-Voici donc la raison de cette convocation, qui, j’en conviens, est assez soudaine.
+    <div class="titre-principal">📜 Log – Année 2410</div>
+    <div class="titre-secondaire"> Rapport de Police Régionale – Région 7-A, Secteur 278-4</div>
+    <p>En cette nuit du vendredi 12 mars, nous avons procédé à la saisie de 19 kg de Sentex sur plusieurs civils.
+    Selon les éléments recueillis, ces individus projetaient de faire exploser la base de la structure du pilier satellitaire n°3.<br />
+    Conformément à la Loi des Enfers, ils ont été exécutés et ont rejoint leurs ancêtres, pour avoir manqué de foi.</p>
 
-Superviseur Lin – Région 6-A :
-Trêve de politesse, Maître.
-Nous sommes tous au courant.
-Cela fait déjà des années que circule la rumeur de l’allocation d’un budget conséquent, dédié à je ne sais quel projet.
-Allons-nous enfin savoir de quoi il retourne, pour l’amour du ciel ?
+    <div class="titre-principal">📜 Log Année 2410 – Nikolai Anderova, survivant de la milice anti-Tour</div>
+    <div class="titre-secondaire"> Région 7-A, Secteur 278-4</div>
+    <p>Mes frères se sont fait prendre hier soir.<br />
+    Paix à leurs âmes.<br />
+    Ces fanatiques les ont jetés dans le vide, sans jugement, sans pitié.<br />
+    Seigneur… qu’arrive-t-il aux hommes ?<br />
+    Depuis quand la folie nous a-t-elle pris ?<br />
+    Le salut de l’humanité ne se trouve pas dans les hauteurs.<br />
+    Il n’y a que la mort, là-haut.<br />
+    Et pour leur faire comprendre cela, il ne nous reste qu’un seul moyen :<br />
+    les empêcher de mener à bien ce projet insensé.</p>
 
-Maître d’Audience Gazik :
-Vous avez raison, Lin.
-Je vais donc être direct.
-Cela fait maintenant plus de cinq ans que nous étudions la faisabilité de la production d’automates de construction, destinés à nous assister de manière décisive pour uniformiser la fondation de notre projet.
-Toutes les études démontrent la viabilité de cette option…
-
-
-📜 Log – Année 2347
-Rapport annuel et prédictibilité – Cycle 2348
-
-Suite à la validation du projet Bâtisseur et à l’instauration de la Pause Sacrée, nous avons procédé à la réallocation ciblée de certains personnels hautement spécialisés.
-Les disciplines mobilisées incluent notamment :
-    • l’ingénierie anatomique,
-    • la robotique,
-    • la programmation avancée,
-    • la bio-culture,
-    • ainsi que d’autres domaines de spécialisation jugés essentiels à la réussite du Projet Bâtisseur.
-Au total, 14 756 scientifiques ont été officiellement affectés à cette mission.
-
-
-📜 Log – Année 2410
-Rapport de Police Régionale – Région 7-A, Secteur 278-4
-
-En cette nuit du vendredi 12 mars, nous avons procédé à la saisie de 19 kg de Sentex sur plusieurs civils.
-Selon les éléments recueillis, ces individus projetaient de faire exploser la base de la structure du pilier satellitaire n°3.
-Conformément à la Loi des Enfers, ils ont été exécutés et ont rejoint leurs ancêtres, pour avoir manqué de foi.
-
-
-
- 
-
-
-📜 Log Année 2410 – Nikolai Anderova, survivant de la milice anti-Tour
-📍 Région 7-A, Secteur 278-4
-Mes frères se sont fait prendre hier soir.
-Paix à leurs âmes.
-Ces fanatiques les ont jetés dans le vide, sans jugement, sans pitié.
-Seigneur… qu’arrive-t-il aux hommes ?
-Depuis quand la folie nous a-t-elle pris ?
-Le salut de l’humanité ne se trouve pas dans les hauteurs.
-Il n’y a que la mort, là-haut.
-Et pour leur faire comprendre cela, il ne nous reste qu’un seul moyen :
-les empêcher de mener à bien ce projet insensé.
-
-
-📜 Log – Année 2412
-Rapport de Police Internationale – À destination de l’Ordre Divin
-
-Après deux années d’observation, il apparaît que le nombre d’individus s’en prenant à la Tour Divine ne cesse de croître.
-Les exécutions successives n’ont produit aucun effet dissuasif notable.
-Nos effectifs policiers sont déjà en situation de sous-effectif chronique.
-En conséquence, nous recommandons :
-    • l’installation de postes de surveillance automatisés,
-    • ainsi que le cloisonnement du Projet Bâtisseur au niveau de sécurité NOIR.
-
+    <div class="titre-principal">📜 Log – Année 2412</div>
+    <div class="titre-secondaire">Rapport de Police Internationale – À destination de l’Ordre Divin</div>
+    <p>Après deux années d’observation, il apparaît que le nombre d’individus s’en prenant à la Tour Divine ne cesse de croître.<br />
+    Les exécutions successives n’ont produit aucun effet dissuasif notable.<br />
+    Nos effectifs policiers sont déjà en situation de sous-effectif chronique.<br />
+    En conséquence, nous recommandons :<br />
+        # 1  • l’installation de postes de surveillance automatisés,<br />
+        # 2 • ainsi que le cloisonnement du Projet Bâtisseur au niveau de sécurité NOIR.</p>
 
   </body>
   </html>
