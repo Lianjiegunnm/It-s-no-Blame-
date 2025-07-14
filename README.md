@@ -3,7 +3,6 @@
 ---
 
 > Plongez dans l'univers de "It's no Blame", un projet de science-fiction...
-> *(le reste de votre README)*
 
 # Codex de l'univers "It's no Blame" 
 
@@ -29,6 +28,6 @@ Pour l'instant, le codex est un ensemble de fichiers HTML. Le moyen le plus simp
 
 ##  roadmap  Prochaines étapes
 
-- [ ] Créer une page d'accueil (`index.html`) pour naviguer entre les différents documents.
-- [ ] Ajouter de nouveaux logs et bulletins.
+- [ ] Complétion globale
+- [ ] Mise en page.
 - [ ] Améliorer le style et l'interactivité avec un peu de JavaScript.
